@@ -19,8 +19,6 @@ Class times and locations
 Teaching assistant
 : *TBA*
 
----
-
 ### Description
 
 ### Objectives
