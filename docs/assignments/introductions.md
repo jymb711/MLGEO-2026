@@ -1,2 +1,5 @@
-# Student Introductions
+---
+layout: default
+title: Assignment: Student introductions
+---
 
