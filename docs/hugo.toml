@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = "Machine Learning for the Geosciences"
 theme = "no-style-please"
 
+[params]
+  [params.theme_config]
+    back_home_text = "Machine learning for the geosciences"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

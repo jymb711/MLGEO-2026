@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ESS 469/569 on Machine Learning for the Geosciences</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:55516/</link>
     <description>Recent content in ESS 469/569 on Machine Learning for the Geosciences</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:55516/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Student introductions</title>
-      <link>http://localhost:1313/assignments/introductions/</link>
+      <link>http://localhost:55516/assignments/introductions/</link>
       <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/assignments/introductions/</guid>
+      <guid>http://localhost:55516/assignments/introductions/</guid>
       <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;&#xA;&lt;h2 id=&#34;deadline&#34;&gt;Deadline&lt;/h2&gt;&#xA;&lt;p&gt;You should fill out your slides by &lt;u&gt;&lt;strong&gt;9:00 AM on Friday, January 9&lt;/strong&gt;&lt;/u&gt;. You will present your slides (strictly timed!) in class that day.&lt;/p&gt;&#xA;&lt;h2 id=&#34;follow-up&#34;&gt;Follow up&lt;/h2&gt;&#xA;&lt;p&gt;After everyone presents on Friday,&lt;/p&gt;</description>
     </item>
     <item>
       <title>Syllabus</title>
-      <link>http://localhost:1313/syllabus/</link>
+      <link>http://localhost:55516/syllabus/</link>
       <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/syllabus/</guid>
+      <guid>http://localhost:55516/syllabus/</guid>
       <description>&lt;h2 id=&#34;logistics&#34;&gt;Logistics&lt;/h2&gt;&#xA;&lt;dl&gt;&#xA;&lt;dt&gt;Instructor&lt;/dt&gt;&#xA;&lt;dd&gt;Akshay Mehra&lt;/dd&gt;&#xA;&lt;dt&gt;Email&lt;/dt&gt;&#xA;&lt;dd&gt;akmehra [at] uw.edu&lt;/dd&gt;&#xA;&lt;dt&gt;Office&lt;/dt&gt;&#xA;&lt;dd&gt;JHN 245&lt;/dd&gt;&#xA;&lt;dt&gt;Office hours&lt;/dt&gt;&#xA;&lt;dd&gt;&lt;em&gt;TBA&lt;/em&gt;&lt;/dd&gt;&#xA;&lt;dt&gt;Class times and locations&lt;/dt&gt;&#xA;&lt;dd&gt;Lectures are on Mondays, Wednesdays, and Fridays from 13:30 to&#xA;14:50 in &lt;em&gt;TBA&lt;/em&gt;&lt;/dd&gt;&#xA;&lt;dt&gt;Teaching assistant&lt;/dt&gt;&#xA;&lt;dd&gt;&lt;em&gt;TBA&lt;/em&gt;&lt;/dd&gt;&#xA;&lt;/dl&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;&#xA;&lt;p&gt;Artificial intelligence (AI) and machine learning (ML) are likely to &amp;hellip;&lt;/p&gt;&#xA;&lt;h2 id=&#34;objectives&#34;&gt;Objectives&lt;/h2&gt;&#xA;&lt;p&gt;I have designed this course to teach you how to &lt;em&gt;think about the use of AI/ML for discipline-specific applications&lt;/em&gt;. By the end of the quarter, you will be able to:&lt;/p&gt;</description>
     </item>
   </channel>
