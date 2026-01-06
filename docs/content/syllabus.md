@@ -23,7 +23,7 @@ Class times and locations
 14:50 in JHN 111.
 
 Teaching assistant
-: *TBA*
+: Henry Yuan
 
 ## Description
 

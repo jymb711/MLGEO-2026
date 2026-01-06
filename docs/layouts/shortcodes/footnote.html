@@ -1,0 +1,9 @@
+{{- $footnotes := .Page.Scratch.Get "footnotes" -}}
+{{- if not $footnotes -}}
+  {{- .Page.Scratch.Set "footnotes" slice -}}
+  {{- $footnotes = slice -}}
+{{- end -}}
+{{- $id := len $footnotes | add 1 -}}
+{{- $text := .Inner | markdownify -}}
+{{- .Page.Scratch.Add "footnotes" (dict "id" $id "text" $text) -}}
+<sup id="fnref:{{$id}}"><a href="#fn:{{$id}}" class="footnote-ref">{{$id}}</a></sup>

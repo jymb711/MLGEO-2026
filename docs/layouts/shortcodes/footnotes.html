@@ -1,0 +1,13 @@
+{{- $footnotes := .Page.Scratch.Get "footnotes" -}}
+{{- if $footnotes -}}
+<div class="footnotes" style="font-size: 0.9em; border-top: 1px dashed currentColor; padding-top: 1rem; margin-top: 2rem;">
+  <ol>
+    {{- range $footnotes -}}
+    <li id="fn:{{.id}}">
+      {{.text | safeHTML}}
+      <a href="#fnref:{{.id}}" class="footnote-backref">↩</a>
+    </li>
+    {{- end -}}
+  </ol>
+</div>
+{{- end -}}
