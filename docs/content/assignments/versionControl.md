@@ -21,6 +21,10 @@ To practice the ```git``` operations we discussed in class.
 5. Submit a pull request.
 6. Approve someone else's pull request.
 
+## Notes
+
+In this case, you have *write* access to the repository. However, there will be times where you want to contribute to a project but lack the ability to modify the repository directly. In such cases, you should *fork*, create a branch, make changes, and then submit a pull request. 
+
 ## Deadline
 
 You should complete these operations before class <u>**on Friday, January 9**</u>.
