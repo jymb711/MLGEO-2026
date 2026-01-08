@@ -1,3 +1,9 @@
-## Ellie Barkyoumb
-## First Year Grad Student 
-## In the Oceanography Department 
+## Name 
+Ellie Barkyoumb 
+
+## Major 
+Oceanography (Marine Geology & Geophysics)
+
+## Expected Graduation Year 
+I am planning on earning my PhD in 2031!
+
