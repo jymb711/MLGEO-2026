@@ -5,4 +5,4 @@ James Bang
 2026
 
 ## Major
-Geophysics
+Geophysics 
