@@ -5,7 +5,7 @@ const marginRem = {top: 1.25, right: 1.25, bottom: 1.25, left: 0};
 const baseInnerWidth = 50; // rem
 const remToPx = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
-d3.json('/survey_data.json').then(data => {
+d3.json('survey_data.json').then(data => {
     function render(data) {
         const containerWidth = document.getElementById('visualization').clientWidth || 900;
         const leftMargin = 0;

@@ -1,11 +1,11 @@
 const colors = ['#e66101', '#fdb863', '#f7f7f7', '#b2abd2', '#5e3c99'];
 const labels = ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'];
 
-const marginRem = {top: 1.25, right: 1.25, bottom: 1.25, left: 0};
+const marginRem = {top: 0, right: 0, bottom: 0, left: 0};
 const baseInnerWidth = 50; // rem
 const remToPx = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
-d3.json('/survey_data.json').then(data => {
+d3.json('survey_data.json').then(data => {
     function render(data) {
         const containerWidth = document.getElementById('visualization').clientWidth || 900;
         const leftMargin = 0;
@@ -21,7 +21,7 @@ d3.json('/survey_data.json').then(data => {
         const legendContainer = d3.select('#visualization')
             .append('div')
             .style('display', 'flex')
-            .style('flex-wrap', 'wrap')
+            .style('flex-wrap', 'nowrap')
             .style('justify-content', 'center')
             .style('gap', '1.5rem')
             .style('max-width', '100%');
@@ -37,21 +37,25 @@ d3.json('/survey_data.json').then(data => {
                 .style('width', '1rem')
                 .style('height', '1rem')
                 .style('background-color', colors[i])
+                .style('border', '1px solid currentColor')
                 .style('flex-shrink', '0');
 
             legendItem.append('span')
                 .attr('class', 'legend')
                 .style('color', 'currentColor')
+                .style('white-space', 'nowrap')
                 .text(label);
         });
 
         data.forEach((group, groupIdx) => {
             const barHeightRem = 2;
-            const textPaddingTopRem = 1;
-            const textPaddingBottomRem = 1;
+            const textPaddingTopRem = 0.5;
+            const textPaddingBottomRem = 0.5;
+            const barPaddingTopRem = 0.5;
+            const barPaddingBottomRem = 0.5;
             
             const totalSvgWidth = containerWidth;
-            const innerWidth = totalSvgWidth - leftMargin - margin.right;
+            const innerWidth = totalSvgWidth;
             
             // First pass: create text divs and measure their actual heights
             const tempContainer = d3.select('body').append('div')
@@ -69,8 +73,10 @@ d3.json('/survey_data.json').then(data => {
                     .style('box-sizing', 'border-box')
                     .text(q.question);
                 
-                const textDivHeight = div.node().offsetHeight;
-                const rowHeight = textDivHeight + (barHeightRem * remToPx);
+                // Force a reflow to ensure accurate height measurement
+                div.node().offsetHeight;
+                const textDivHeight = div.node().getBoundingClientRect().height;
+                const rowHeight = textDivHeight + (barPaddingTopRem * remToPx) + (barHeightRem * remToPx) + (barPaddingBottomRem * remToPx);
                 
                 return { question: q, textDivHeight, rowHeight };
             });
@@ -135,8 +141,8 @@ d3.json('/survey_data.json').then(data => {
                     .style('box-sizing', 'border-box')
                     .text(q.question);
                 
-                // Bar positioned after the text div
-                const barY = textDivY + qd.textDivHeight;
+                // Bar positioned after the text div with top padding
+                const barY = textDivY + qd.textDivHeight + (barPaddingTopRem * remToPx);
 
                 const x = d3.scaleLinear()
                     .domain([0, 100])
