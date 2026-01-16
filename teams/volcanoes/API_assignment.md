@@ -59,7 +59,7 @@ Discharge (`q_df["discharge_cfs"]`) and stage (`h_df["stage_ft"]`) peak on Decem
 
 ## Synthesis and Interpretation
 
-The multimodal datasets reveal a clear causal sequence:
+The multimodal datasets reveals a sequence:
 
 1. Sustained precipitation increased basin-wide soil moisture.
 2. Stream discharge peaked as drainage capacity was exceeded.
@@ -73,13 +73,13 @@ The alignment between precipitation forcing, hydrologic response, and seismic de
 
 All datasets used in this analysis are publicly available:
 
-- **NOAA**: Daily precipitation data
 - **USGS**: Stream gauge data (Station 12451000)
 - **IRIS / PNSN**: Seismic waveform data from UW stations
 
 USGS datasets used directly in this workflow are archived locally as:
 
-- `usgs_12451000_iv_discharge_2025-12-10_to_2025-12-16.csv`
-- `usgs_12451000_iv_stage_2025-12-10_to_2025-12-16.csv`
+1. `usgs_12451000_iv_discharge_2025-12-10_to_2025-12-16.csv` 
+    - This dataset contains 15-minute instantaneous river stage measurements 
+2. `usgs_12451000_iv_stage_2025-12-10_to_2025-12-16.csv`
+    - This dataset contains 15-minute steam discharge measurements
 
-All figures are generated reproducibly in `notebook_API_assingment.ipynb`.
